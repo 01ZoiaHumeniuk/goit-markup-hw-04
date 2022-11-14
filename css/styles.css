@@ -180,12 +180,15 @@ margin-right: 50px;
 }
 /*  -------------маін--------  */
 .background{
-    background-image: url(../imeges/Img-bg\(1\).jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+    
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+          url(../imeges/Img-bg\(1\).jpg);
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -221,6 +224,7 @@ margin-right: 50px;
 .order-button{
   margin: 0 auto;
   display: block;
+  border-radius: 4px;
 padding:10px 32px ;
 }
 .order-button:hover,
@@ -435,6 +439,7 @@ gap: 30px;
   color: var(--footer-color);
 
 }
+
 .footer-studio{
   color: var(--main-color);
   display: inline-block;
@@ -443,32 +448,39 @@ gap: 30px;
 .footer-web{
   margin-bottom: 20px;
 }
-.footer-flex{
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
 
-}
 .footer-list{
   display: flex;
 
 }
-.footer-container{
-
-
+.box-address .container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
 }
+
 .footer-title{
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 100%;
   width: 116px;
   height: 16px;
   margin-bottom: 20px;
-color: var(--main-color);
+  color: var(--main-color);
+}
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
 }
+.footer-gap{
+  gap: 10px;
 
+}
 .footer-position{
 width: 44px;
 height: 44px;
-
 }
 .footer-link{
     display: flex;
@@ -506,7 +518,7 @@ height: 44px;
     border: 0;
     min-width: max-content;
     text-align: center;
-    radius: 4px;
+    border-radius: 4px;
     padding: 6px 22px;
 
 }
@@ -518,6 +530,7 @@ gap: 8px;
 margin-bottom: 56px;
 }
 
+
 .projects-flex{
     display: flex;
     flex-wrap: wrap;
@@ -526,11 +539,15 @@ margin-bottom: 56px;
 .list-projects{
 width: calc((100% - 60px)/3);
 }
+.shadow{
+  display: block;
+}
 .shadow:hover{
 box-shadow:
-  6px 1px 4px rgba(0, 0, 0, 0.16),
-  4px 0px 4px rgba(0, 0, 0, 0.06),
-  1px 0px 1px rgba(0, 0, 0, 0.12);
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  0px 1px 1px rgba(0, 0, 0, 0.12),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .background-projeckt{
@@ -543,6 +560,8 @@ border-bottom: 1px solid #EEEEEE;
 .button-filter:focus{
 color: var(--main-color);
 background-color: var(--accent-color);
+box-shadow: 
+1px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 .button-filter:hover{
