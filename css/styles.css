@@ -234,7 +234,6 @@ padding:10px 32px ;
 
 
 .priority-flex{
-  margin-right: 30px;
   width: calc((100% - 90px)/4);
 }
 .priority-flex li:last-child {
@@ -325,11 +324,9 @@ column-gap: 30px
   0px 1px 3px rgba(0,0,0,0.12);
 
 }
+
 .networks{
-display: flex;
-  gap: 10px;
-  justify-content: center;
-  padding-bottom: 30px;
+
 }
 .networks-position{
   width: 44px;
@@ -365,6 +362,10 @@ display: flex;
 .cgr-bloc{
   padding-top: 30px;
   padding-bottom: 30px;
+    display: flex;
+      gap: 10px;
+      justify-content: center;
+      padding-bottom: 30px;
 
 }
 
@@ -386,8 +387,8 @@ gap: 30px;
 .clients{
       width: 170px;
       height: 92px;
-      outline:1px solid #AFB1B8;
-      width: calc((100%-150px)/6);
+
+      width: calc((100% - 150px)/6);
 }
 
 .clients-position{
@@ -402,11 +403,11 @@ gap: 30px;
 }
 .clients.clients-position:focus{
   background-color:var(--color-hover-icone);
-  border: 1px solid var(--color-hover-icone);
+ 
 }
 .clients.clients-position:hover{
     background-color: var(--color-hover-icone);
-    border: 1px solid var(--color-hover-icone);
+
 }
 
 .icon-clients{
