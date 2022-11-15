@@ -326,8 +326,14 @@ column-gap: 30px
 }
 
 .networks{
+  display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.networks-icon{
 
 }
+
 .networks-position{
   width: 44px;
   height: 44px;
@@ -355,17 +361,12 @@ column-gap: 30px
 }
 .networks-icon{
   fill: #AFB1B8;
-  width: 20px;
-  height: 20px;
+
 }
 
 .cgr-bloc{
   padding-top: 30px;
   padding-bottom: 30px;
-    display: flex;
-      gap: 10px;
-      justify-content: center;
-      padding-bottom: 30px;
 
 }
 
@@ -374,10 +375,10 @@ column-gap: 30px
   max-width:100%;
 }
 
-.clients:hover{
+.clients-position:hover{
   border: 1px solid var(--color-hover-icone);
 }
-.clients:hover .icon-clients{
+.clients-position:hover .icon-clients{
   fill: var(--color-hover-icone);
 }
 .clients-list{
@@ -387,7 +388,7 @@ gap: 30px;
 .clients{
       width: 170px;
       height: 92px;
-
+      
       width: calc((100% - 150px)/6);
 }
 
@@ -399,21 +400,20 @@ gap: 30px;
     border-radius: 4px;
     width: 100%;
     height: 100%;
+    border: 1px solid #AFB1B8;
+}
+.clients-position:focus{
+  fill:var(--color-hover-icone);
 
 }
-.clients.clients-position:focus{
-  background-color:var(--color-hover-icone);
- 
-}
-.clients.clients-position:hover{
-    background-color: var(--color-hover-icone);
+.clients-position:hover{
+    fill:  var(--color-hover-icone);
 
 }
 
 .icon-clients{
   fill:#AFB1B8;
-  width: 106px;
-  height: 60px;
+
 }
 
 /* --------------підвал ----------------*/
@@ -489,14 +489,15 @@ height: 44px;
 }
 .footer-icon{
   fill: #FFFFFF;
-  width: 20px;
-  height: 20px;
 }
+
 .footer-link:hover{
   background-color: var(--color-hover-icone);
+  fill: var(--color-hover-icone);
 }
 .footer-link:focus {
   background-color: var(--color-hover-icone);
+  fill: var(--color-hover-icone);
 }
 
 
