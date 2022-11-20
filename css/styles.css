@@ -119,6 +119,15 @@ display: flex;
 align-items: center;
 gap: 10px;
 } 
+.header-link:after{
+  content:"";
+  height: 4px;
+  width: 100%;
+  display: block;
+  background-color: var(--color-hover-icone);
+
+
+}
 
 .icon-header{
   fill: currentColor;
